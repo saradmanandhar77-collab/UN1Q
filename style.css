@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+    transition: 0.4s;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 15px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #e90202;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#themeBtn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, .5),
+            rgba(0, 0, 0, .5)),
+        url("https://cdn.accentuate.io/557331939431/1668405544414/nike-air-jordan-1-lost-and-found-group-22.jpg?v=1668405544414://imgs.search.brave.com/muN7ApHTqkb1I_--zvwF_UVC7jinMLeelQmp6t8e-zo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zb2xl/c2F2eS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMDgv/QWlyLUpvcmRhbi0x/LUxvc3QtYW5kLUZv/dW5kLURaNTQ4NS02/MTItUmVsZWFzZS1E/YXRlLTczMXg3NzAu/anBlZw");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    border: none;
+    background: #ff0015;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.products {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    transition: .4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3,
+p {
+    padding: 10px;
+}
+
+.about {
+    padding: 80px 15%;
+    text-align: center;
+    background: white;
+}
+
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form button {
+    padding: 15px 30px;
+    border: none;
+    background: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Dark Mode */
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark .card {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark .about {
+    background: #1e1e1e;
+}
+
+@media(max-width:768px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+}
